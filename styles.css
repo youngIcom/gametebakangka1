@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right top, #0766f3, #6cdbeb);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  max-width: 60%;
+  padding: 4rem 2rem;
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 1.5rem;
+}
+
+.form-group {
+  padding: 1rem 0;
+}
+
+input {
+  max-width: 100%;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+button {
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+button.submit {
+  background: #0d4cfa;
+  border: 1px solid #65dfc9;
+}
+
+button.refresh {
+  background: black;
+  border: 1px solid black;
+}
+
+#feedback {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.winner {
+  text-transform: uppercase;
+}
+
+.error {
+  color: red;
+}
